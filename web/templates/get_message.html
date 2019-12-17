@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div>
+
+{% for content in allmessages %}
+    <ul>
+      <small class="text-muted">{{ content.date_posted }}</small>
+      <li>{{ content.names }}</li>
+      <li>{{ content.emails}}</li>
+      <li>{{ content.subjects}}</li>
+      <li>{{ content.messages}}</li>
+    </ul>
+
+{% endfor %}
+
+</div>
+
+{% endblock %}

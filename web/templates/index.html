@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+
+    {% for data in user_data %}
+        <article class="media content-section">
+          <div class="media-body">
+            <div class="article-metadata">
+                <h3>Welcome <small><i>{{ data.forename }}&nbsp{{ data.surname}}</i></small></h3>
+            </div>
+            <div class="post">
+            <ul>
+                Date of birth : {{ data.date }}
+                Username : {{ data.username }}
+                Email : {{ data.email }}
+            </ul>
+            </div>
+          </div>
+        </article>
+    {% endfor %}
+
+{% endblock content %}

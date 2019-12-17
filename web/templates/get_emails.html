@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div>
+
+{% for content in allemails %}
+    <ul>
+      <li>{{ content.emails}}</li>
+    </ul>
+
+{% endfor %}
+
+</div>
+
+{% endblock %}
