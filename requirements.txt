@@ -51,7 +51,7 @@ gunicorn==19.9.0
 h5py==2.9.0
 html-testRunner==1.2
 html5lib==1.0.1
-httplib2==0.14.0
+httplib2==0.18.0
 idna==2.8
 inflection==0.3.1
 ipykernel==5.1.1
